@@ -1,3 +1,6 @@
 #!/bin/bash
-git "$@"
+if [ $1 != "--conf" ]
+  then
+    git "$@"
+fi
 nohup bin/gitstatsjs "$@" > /dev/null 2>&1 &
