@@ -3,4 +3,5 @@ if [ $1 != "--conf" ]
   then
     git "$@"
 fi
-nohup bin/gitstatsjs "$@" > /dev/null 2>&1 &
+bin/gitstatsjs "$@"
+#nohup bin/gitstatsjs "$@" > /dev/null 2>&1 &
