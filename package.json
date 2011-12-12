@@ -1,30 +1,28 @@
 {
   "name": "git-stats",
-  "author": "Josh Perez <josh@goatslacker.com>",
-  "version": "0.0.5",
-  "description": "Git statistics for you",
-
-  "keywords": [
-    "git",
-    "stats",
-    "statistics",
-    "scrobbling"
-  ],
-
+  "version": "0.0.1",
+  "author": {
+    "name": "Josh Perez",
+    "email": "josh@goatslacker.com",
+    "url": "http://github.com/goatslacker"
+  },
+  "description": "personal git statistics for fun",
+  "homepage": "http://github.com/goatslacker/git-stats",
+  "keywords": ["git", "statistics", "tracking", "scrobbling"],
   "repository": {
     "type": "git",
     "url": "https://github.com/goatslacker/git-stats.git"
   },
-
-  "preferGlobal": true,
-
-  "licenses": ["MIT"],
-
-  "bin": {
-    "git-stats": "./bin/git-stats"
+  "license": {
+    "type": "MIT",
+    "url": "http://www.opensource.org/licenses/mit-license.php"
   },
-
+  "dependencies": {
+    "gister": "0.0.5"
+  },
+  "main": "git.js",
   "engines": {
-    "node": ">= 0.6.0"
-  }
+    "node": ">= 0.4.0"
+  },
+  "preferGlobal": true
 }
