@@ -61,9 +61,9 @@ gist.on('error:credentials', function () {
   throw new Error("Credentials are required: GitHub username and token.");
 });
 
-// If the gist doesn't exist, create a new one.
+// If the gist doesn't exist, keep it local.
 gist.on('error:gist_id', function () {
-  gist.create(JSON.stringify([log]), "git-stats");
+//  gist.create(JSON.stringify([log]), "git-stats");
 });
 
 // When new gist is created, notify user and

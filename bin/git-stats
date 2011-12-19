@@ -1,6 +1,12 @@
 #!/bin/bash
-if [ $1 != "--conf" ]
+LOG=false
+if [ $1 == "--do-not-log" ]
   then
-    git "$@"
+    shift
+    LOG=true
 fi
-nohup bin/js "$@" > /dev/null 2>&1 &
+git "$@"
+if [ $LOG == true ]
+  then
+    nohup bin/js "$@" > /dev/null 2>&1 &
+fi
