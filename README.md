@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/goatslacker/git-stats.png)](http://travis-ci.org/goatslacker/git-stats)
 # git-stats
 
 Personal git statistics for fun
